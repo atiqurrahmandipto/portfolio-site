@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ab-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#062e1e" />
+    </linearGradient>
+    <linearGradient id="ab-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="ab-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <filter id="ab-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#ab-bg)"/>
+
+  <!-- App Window Frame -->
+  <g transform="translate(50, 35)" filter="url(#ab-shadow)">
+    <rect width="700" height="430" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <rect width="700" height="42" rx="14" fill="#020617"/>
+    <!-- Dots -->
+    <circle cx="24" cy="21" r="6" fill="#ef4444"/>
+    <circle cx="44" cy="21" r="6" fill="#f59e0b"/>
+    <circle cx="64" cy="21" r="6" fill="#10b981"/>
+    <text x="350" y="26" fill="#eab308" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Aabadi — D2C Cold Pressed Food Brand &amp; Consumer Traceability</text>
+
+    <!-- Content Grid -->
+    <g transform="translate(30, 60)">
+      <!-- Left: Farm-to-Table Supply Chain Card -->
+      <g transform="translate(0, 0)">
+        <rect width="300" height="330" rx="10" fill="url(#ab-card)" stroke="#334155" stroke-width="1"/>
+        <rect width="300" height="36" rx="10" fill="#1e293b"/>
+        <text x="16" y="23" fill="#eab308" font-family="sans-serif" font-size="12" font-weight="bold">🌱 D2C Single-Origin Sourcing</text>
+        
+        <g transform="translate(16, 55)">
+          <text x="0" y="0" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">Origin: Jamalpur Mustard Farmers</text>
+          <text x="0" y="20" fill="#94a3b8" font-family="sans-serif" font-size="10">Direct farmer partnerships eliminating middlemen</text>
+
+          <text x="0" y="55" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">Process: Pure Cold-Pressed (Gháni)</text>
+          <text x="0" y="75" fill="#94a3b8" font-family="sans-serif" font-size="10">Zero adulteration, 100% natural aroma &amp; purity</text>
+
+          <text x="0" y="110" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">Target Market: Urban Dhaka</text>
+          <text x="0" y="130" fill="#94a3b8" font-family="sans-serif" font-size="10">Quality-conscious homemakers &amp; health focus</text>
+
+          <!-- Quality Seal -->
+          <g transform="translate(0, 160)">
+            <rect width="268" height="85" rx="8" fill="#062e1e" stroke="#10b981" stroke-width="1.2"/>
+            <text x="14" y="25" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold">🛡️ The Core Trust Gap Solved</text>
+            <text x="14" y="45" fill="#94a3b8" font-family="sans-serif" font-size="9">Consumer-facing QR code traceability gives buyers</text>
+            <text x="14" y="60" fill="#94a3b8" font-family="sans-serif" font-size="9">instant proof of harvest date, press batch &amp; purity.</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Right: Traceability Verification Screen Mockup -->
+      <g transform="translate(320, 0)">
+        <rect width="320" height="330" rx="10" fill="#030712" stroke="#10b981" stroke-width="1.5"/>
+        <rect width="320" height="36" rx="10" fill="#064e3b"/>
+        <text x="160" y="23" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">🔍 Verified Batch Certificate</text>
+
+        <g transform="translate(20, 55)">
+          <rect width="280" height="40" rx="6" fill="#111827" stroke="#374151" stroke-width="1"/>
+          <text x="12" y="18" fill="#9ca3af" font-family="sans-serif" font-size="9">BATCH IDENTIFIER</text>
+          <text x="12" y="32" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">AAB-JML-2026-0842</text>
+
+          <g transform="translate(0, 50)">
+            <text x="0" y="15" fill="#e5e7eb" font-family="sans-serif" font-size="10">👨‍🌾 Farmer Cluster:</text>
+            <text x="130" y="15" fill="#10b981" font-family="sans-serif" font-size="10" font-weight="bold">Jamalpur North Coop</text>
+
+            <text x="0" y="35" fill="#e5e7eb" font-family="sans-serif" font-size="10">📅 Harvest &amp; Press:</text>
+            <text x="130" y="35" fill="#f8fafc" font-family="sans-serif" font-size="10">February 2026</text>
+
+            <text x="0" y="55" fill="#e5e7eb" font-family="sans-serif" font-size="10">🧪 Lab Purity Test:</text>
+            <text x="130" y="55" fill="#22c55e" font-family="sans-serif" font-size="10" font-weight="bold">100% Unadulterated</text>
+
+            <text x="0" y="75" fill="#e5e7eb" font-family="sans-serif" font-size="10">🚚 Distribution Hub:</text>
+            <text x="130" y="75" fill="#f8fafc" font-family="sans-serif" font-size="10">Dhaka Central Hub</text>
+          </g>
+
+          <g transform="translate(0, 150)">
+            <rect width="280" height="45" rx="8" fill="url(#ab-gold)"/>
+            <text x="140" y="28" fill="#000000" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">✔ Verified Pure &amp; Traceable</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

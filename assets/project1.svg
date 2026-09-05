@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="kb-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="kb-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="kb-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#kb-bg)"/>
+
+  <!-- Subtle Kids Learning Pattern -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1">
+    <circle cx="100" cy="80" r="30" fill="none"/>
+    <circle cx="700" cy="120" r="50" fill="none"/>
+    <rect x="680" y="360" width="60" height="60" rx="10" fill="none"/>
+    <polygon points="120,400 150,350 180,400" fill="none"/>
+  </g>
+
+  <!-- App Window / Mobile Preview Frame -->
+  <g transform="translate(50, 35)" filter="url(#kb-shadow)">
+    <rect width="700" height="430" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <rect width="700" height="42" rx="14" fill="#020617"/>
+    <!-- Window Dots -->
+    <circle cx="24" cy="21" r="6" fill="#ef4444"/>
+    <circle cx="44" cy="21" r="6" fill="#f59e0b"/>
+    <circle cx="64" cy="21" r="6" fill="#10b981"/>
+    <text x="350" y="26" fill="#f59e0b" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Kids Book — AI-Powered Bilingual Learning App (Class 1-3)</text>
+
+    <!-- App Content -->
+    <g transform="translate(30, 60)">
+      <!-- Left: Mobile Phone Screen Simulation -->
+      <g transform="translate(10, 10)">
+        <rect width="200" height="330" rx="20" fill="#020617" stroke="#6366f1" stroke-width="2"/>
+        <rect x="70" y="8" width="60" height="8" rx="4" fill="#1e293b"/>
+        
+        <!-- App Header in Mobile -->
+        <rect x="15" y="30" width="170" height="40" rx="8" fill="url(#kb-accent)"/>
+        <text x="100" y="55" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">বই পড়ি ও শিখি 📚</text>
+        
+        <!-- Interactive Lesson Card 1 -->
+        <g transform="translate(15, 80)">
+          <rect width="170" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+          <text x="12" y="25" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="bold">অক্ষর ও শব্দ (Letters)</text>
+          <text x="12" y="42" fill="#94a3b8" font-family="sans-serif" font-size="9">Class 1 Bangla &amp; English</text>
+          <text x="12" y="56" fill="#22c55e" font-family="sans-serif" font-size="9">✔ 85% Progress</text>
+        </g>
+
+        <!-- Interactive Lesson Card 2 (AI Story layer) -->
+        <g transform="translate(15, 155)">
+          <rect width="170" height="75" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.2"/>
+          <text x="12" y="25" fill="#fbbf24" font-family="sans-serif" font-size="11" font-weight="bold">AI Adaptive Storytelling</text>
+          <text x="12" y="44" fill="#e2e8f0" font-family="sans-serif" font-size="9">Interactive speech voiceover</text>
+          <rect x="12" y="52" width="80" height="15" rx="4" fill="#f59e0b"/>
+          <text x="52" y="63" fill="#000000" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">Listen (শুনুন) ▶</text>
+        </g>
+
+        <!-- Child Achievement Badge -->
+        <g transform="translate(15, 240)">
+          <rect width="170" height="65" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+          <text x="12" y="25" fill="#10b981" font-family="sans-serif" font-size="10" font-weight="bold">⭐ 12 Stars Earned Today</text>
+          <text x="12" y="45" fill="#94a3b8" font-family="sans-serif" font-size="9">Curriculum-Aligned Learning</text>
+        </g>
+      </g>
+
+      <!-- Right: Architecture & Market Problem Overview -->
+      <g transform="translate(240, 10)">
+        <!-- Market Opportunity Card -->
+        <rect width="390" height="155" rx="10" fill="url(#kb-card)" stroke="#334155" stroke-width="1"/>
+        <text x="20" y="30" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">Market Gap &amp; Problem Solved</text>
+        <text x="20" y="55" fill="#94a3b8" font-family="sans-serif" font-size="11">● Millions of Bangladeshi children (aged 6-9) have smartphone access.</text>
+        <text x="20" y="75" fill="#94a3b8" font-family="sans-serif" font-size="11">● Lack structured, native language digital early learning tools.</text>
+        <text x="20" y="95" fill="#94a3b8" font-family="sans-serif" font-size="11">● Dual language focus (Bangla &amp; English) for independent Class 1-3 learning.</text>
+        
+        <g transform="translate(20, 115)">
+          <rect width="110" height="24" rx="4" fill="#312e81"/>
+          <text x="55" y="16" fill="#a5b4fc" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Prototype on GitHub</text>
+
+          <rect x="120" y="0" width="110" height="24" rx="4" fill="#064e3b"/>
+          <text x="175" y="16" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">AI Adaptive Layer</text>
+
+          <rect x="240" y="0" width="105" height="24" rx="4" fill="#78350f"/>
+          <text x="292" y="16" fill="#fde047" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Flutter / Mobile</text>
+        </g>
+
+        <!-- Technical Roadmap Card -->
+        <g transform="translate(0, 170)">
+          <rect width="390" height="160" rx="10" fill="url(#kb-card)" stroke="#334155" stroke-width="1"/>
+          <text x="20" y="30" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">Engineering &amp; AI Integration Pipeline</text>
+          
+          <g transform="translate(20, 50)">
+            <rect width="100" height="85" rx="6" fill="#1e293b" stroke="#6366f1" stroke-width="1"/>
+            <text x="50" y="28" fill="#818cf8" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Flutter UI</text>
+            <text x="50" y="48" fill="#94a3b8" font-family="sans-serif" font-size="8" text-anchor="middle">Gamified Lessons</text>
+            <text x="50" y="65" fill="#22c55e" font-family="sans-serif" font-size="8" text-anchor="middle">Working Prototype</text>
+
+            <text x="110" y="50" fill="#6366f1" font-size="16">→</text>
+
+            <g transform="translate(125, 0)">
+              <rect width="100" height="85" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+              <text x="50" y="28" fill="#fbbf24" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">AI Model Layer</text>
+              <text x="50" y="48" fill="#94a3b8" font-family="sans-serif" font-size="8" text-anchor="middle">Adaptive Difficulty</text>
+              <text x="50" y="65" fill="#fbbf24" font-family="sans-serif" font-size="8" text-anchor="middle">Voice &amp; Pronounce</text>
+            </g>
+
+            <text x="235" y="50" fill="#f59e0b" font-size="16">→</text>
+
+            <g transform="translate(250, 0)">
+              <rect width="100" height="85" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+              <text x="50" y="28" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Analytics</text>
+              <text x="50" y="48" fill="#94a3b8" font-family="sans-serif" font-size="8" text-anchor="middle">Parent Dashboard</text>
+              <text x="50" y="65" fill="#10b981" font-family="sans-serif" font-size="8" text-anchor="middle">Progress Sync</text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
