@@ -1,14 +1,9 @@
-/* ==========================================================================
-   Alex Rivera Portfolio — Modern Design System & Stylesheet
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. CSS Custom Properties & Design Tokens (Dark & Light Themes)
-   -------------------------------------------------------------------------- */
 :root {
   /* Fonts */
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans:
+    "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
   /* Typography Scale */
   --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
@@ -58,7 +53,7 @@
   --bg-nav: rgba(9, 13, 22, 0.82);
   --bg-input: rgba(15, 23, 42, 0.9);
   --bg-modal: #0d121f;
-  
+
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
@@ -78,7 +73,12 @@
   --shadow-glow-cyan: 0 0 35px rgba(6, 182, 212, 0.25);
 
   --grad-text: linear-gradient(135deg, #f8fafc 20%, #a5b4fc 60%, #38bdf8 100%);
-  --grad-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+  --grad-primary: linear-gradient(
+    135deg,
+    #6366f1 0%,
+    #8b5cf6 50%,
+    #06b6d4 100%
+  );
   --grad-accent: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
   --ambient-glow-1: rgba(99, 102, 241, 0.15);
   --ambient-glow-2: rgba(6, 182, 212, 0.12);
@@ -94,7 +94,7 @@
   --bg-nav: rgba(248, 250, 252, 0.85);
   --bg-input: #ffffff;
   --bg-modal: #ffffff;
-  
+
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-muted: #64748b;
@@ -114,7 +114,12 @@
   --shadow-glow-cyan: 0 0 30px rgba(6, 182, 212, 0.15);
 
   --grad-text: linear-gradient(135deg, #0f172a 20%, #4338ca 70%, #0284c7 100%);
-  --grad-primary: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #0284c7 100%);
+  --grad-primary: linear-gradient(
+    135deg,
+    #4f46e5 0%,
+    #7c3aed 50%,
+    #0284c7 100%
+  );
   --grad-accent: linear-gradient(135deg, #db2777 0%, #7c3aed 100%);
   --ambient-glow-1: rgba(99, 102, 241, 0.08);
   --ambient-glow-2: rgba(6, 182, 212, 0.06);
@@ -123,7 +128,9 @@
 /* --------------------------------------------------------------------------
    2. Reset & Global Base Styles
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -144,7 +151,9 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-  transition: background-color var(--transition-slow), color var(--transition-normal);
+  transition:
+    background-color var(--transition-slow),
+    color var(--transition-normal);
 }
 
 /* Accessibility: Skip Link */
@@ -202,7 +211,12 @@ body {
 }
 
 /* Typography Utilities */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-primary);
   font-weight: 700;
   line-height: 1.25;
@@ -318,7 +332,7 @@ a {
 }
 
 .btn-whatsapp {
-  background: #25D366;
+  background: #25d366;
   color: #ffffff;
   box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
 }
@@ -353,7 +367,10 @@ a {
   border: 1px solid var(--border-card);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
+  transition:
+    transform var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
 .card-glass:hover {
   border-color: rgba(99, 102, 241, 0.35);
@@ -376,7 +393,9 @@ a {
   z-index: 1000;
   display: flex;
   align-items: center;
-  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+  transition:
+    background-color var(--transition-normal),
+    border-color var(--transition-normal);
 }
 
 .nav-container {
@@ -421,11 +440,12 @@ a {
   position: relative;
   padding: 0.35rem 0;
 }
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--text-primary);
 }
 .nav-link.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -603,9 +623,18 @@ a {
   animation: pulse-dot 2s infinite;
 }
 @keyframes pulse-dot {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.3); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.8; }
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
 }
 .status-text {
   font-size: var(--text-xs);
@@ -754,8 +783,13 @@ a {
   animation-delay: -2.5s;
 }
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -931,7 +965,7 @@ a {
   gap: 0.6rem;
 }
 .skill-list-items li::before {
-  content: '●';
+  content: "●";
   color: var(--brand-indigo);
   font-size: 0.75rem;
 }
@@ -1234,7 +1268,7 @@ a {
   gap: 0.6rem;
 }
 .modal-feature-item::before {
-  content: '⚡';
+  content: "⚡";
   font-size: 0.85rem;
 }
 
@@ -1289,7 +1323,7 @@ a {
   gap: 1.75rem;
 }
 .timeline-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   bottom: 10px;
@@ -1306,7 +1340,7 @@ a {
   z-index: 1;
 }
 .timeline-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 24px;
   left: -3.5rem;
@@ -1365,7 +1399,7 @@ a {
   padding-left: 1.25rem;
 }
 .timeline-bullets li::before {
-  content: '▸';
+  content: "▸";
   position: absolute;
   left: 0;
   color: var(--brand-indigo);
@@ -1575,7 +1609,9 @@ a {
   opacity: 0.8;
 }
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -1700,7 +1736,9 @@ a {
 .reveal-on-scroll {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .reveal-on-scroll.revealed {
   opacity: 1;
@@ -1760,7 +1798,9 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
