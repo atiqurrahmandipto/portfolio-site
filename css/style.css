@@ -5,7 +5,6 @@
     sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  /* Typography Scale */
   --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
   --text-sm: clamp(0.8125rem, 0.77rem + 0.25vw, 0.875rem);
   --text-base: clamp(0.9375rem, 0.9rem + 0.25vw, 1.0625rem);
